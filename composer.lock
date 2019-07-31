@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "144dff833bb8b25b62b41aa708160d39",
-    "content-hash": "bae3f640a631a993a49129d353eefbf9",
+    "hash": "68a0fd9fca01a41cfbc810aa86985f5f",
+    "content-hash": "50d3cd3c38bcce101097867d2b451e52",
     "packages": [
         {
             "name": "aura/intl",
@@ -292,6 +292,86 @@
             ],
             "description": "A composer installer for CakePHP 3.0+ plugins.",
             "time": "2019-07-25 15:43:38"
+        },
+        {
+            "name": "friendsofcake/crud",
+            "version": "5.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfCake/crud.git",
+                "reference": "f33e64939960e42ea0f728924e67ed4692cca66c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/f33e64939960e42ea0f728924e67ed4692cca66c",
+                "reference": "f33e64939960e42ea0f728924e67ed4692cca66c",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.5"
+            },
+            "require-dev": {
+                "cakephp/chronos": "^1.1",
+                "friendsofcake/cakephp-test-utilities": "^1.0",
+                "friendsofcake/search": "^4.4",
+                "muffin/webservice": "^1.3",
+                "phpunit/phpunit": "^5.7.14|^6.0"
+            },
+            "suggest": {
+                "friendsofcake/crud-json-api": "Crud listener for building APIs following the JSON API specification",
+                "friendsofcake/crud-view": "Automated admin backend based on your Crud configuration.",
+                "friendsofcake/search": "Provides search capabilities for the Crud plugin."
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Crud\\": "src"
+                },
+                "files": [
+                    "aliases.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Winther",
+                    "role": "Author",
+                    "homepage": "http://cakephp.nu/"
+                },
+                {
+                    "name": "José Lorenzo Rodríguez",
+                    "role": "Contributor",
+                    "homepage": "https://github.com/lorenzo"
+                },
+                {
+                    "name": "Andy Dawson",
+                    "role": "Contributor",
+                    "homepage": "https://github.com/ad7six"
+                },
+                {
+                    "name": "ADmad",
+                    "role": "Contributor",
+                    "homepage": "https://github.com/admad"
+                }
+            ],
+            "description": "CakePHP Application development on steroids - rapid prototyping / scaffolding & production ready code - XML / JSON APIs and more",
+            "homepage": "https://github.com/FriendsOfCake/crud",
+            "keywords": [
+                "bake",
+                "cake",
+                "cakephp",
+                "create",
+                "crud",
+                "delete",
+                "retrieve",
+                "scaffold",
+                "scaffolding",
+                "update"
+            ],
+            "time": "2018-12-09 16:34:19"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
