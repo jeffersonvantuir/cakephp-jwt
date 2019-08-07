@@ -62,3 +62,18 @@ If all goes well, you will get a return similar to this one below.
     }
 }
 ```
+
+## Pages
+
+Below are all pages that you can access on this project.
+
+#### Pages allowed without Token authentication
+
+ - /api/users/register (POST)
+ - /api/users/login (POST)
+ - /api/articles (GET)
+ 
+#### Pages allowed only with Token authentication
+ 
+ - /api/users/edit (POST, PUT)
+ - /api/articles (POST, PUT)
