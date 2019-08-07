@@ -15,7 +15,7 @@ The project consists of:
 
  - [CakePHP JWT Auth](https://github.com/ADmad/cakephp-jwt-auth)
  ```bash
- composer require friendsofcake/crud
+ composer require admad/cakephp-jwt-auth
  ```
  
  - [Crud](https://github.com/FriendsOfCake/crud)
@@ -39,3 +39,26 @@ The project consists of:
 4. Execute the migrations with command line `bin/cake migrations:migrate`.
 
 5. Start the server with `bin/cake server -p 8765` and access the browser [http://localhost:8765](http://localhost:8765).
+
+6. Create a user by accessing [http://localhost:8765/api/users/register](http://localhost:8765/api/users/register).
+
+ #### cUrl
+ 
+Below is an example cUrl API request.
+
+```curl
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -i http://localhost:8765/api/users/register --data 'name=Jefferson Vantuir&email=jeffersonbehling@gmail.com&password=test123'
+```
+
+If all goes well, you will get a return similar to this one below.
+
+```json
+{
+    "success": true,
+    "data": {
+        "id": "76210f94-3b78-433f-a06c-2358df5f9f11",
+        "message": "User has been registered.",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NjIxMGY5NC0zYjc4LTQzM2YtYTA2Yy0yMzU4ZGY1ZjlmMTEiLCJleHAiOjE1NjU3OTE2MTR9.V930GtcvLvQu548UaHr8nY311aIHqaaugnJrQKbfkD4"
+    }
+}
+```
