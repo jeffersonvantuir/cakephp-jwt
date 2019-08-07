@@ -54,9 +54,7 @@ Router::scope('/api', function (RouteBuilder $routes) {
         'only' => ['add', 'edit', 'view', 'login']
     ]);
 
-    $routes->resources('Articles', [
-        'only' => ['index', 'add', 'edit', 'view']
-    ]);
+    $routes->resources('Articles');
 
     $routes->fallbacks(DashedRoute::class);
 });
