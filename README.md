@@ -36,7 +36,7 @@ The project consists of:
 
 3. Create your database and configure `config/app.php` file.
 
-4. Execute the migrations with command line `bin/cake migrations:migrate`.
+4. Execute the migrations with command line `bin/cake migrations migrate`.
 
 5. Start the server with `bin/cake server -p 8765` and access the browser [http://localhost:8765](http://localhost:8765).
 
