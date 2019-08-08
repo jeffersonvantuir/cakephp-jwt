@@ -40,7 +40,7 @@ The project consists of:
 
 5. Start the server with `bin/cake server -p 8765` and access the browser [http://localhost:8765](http://localhost:8765).
 
-6. Create a user by accessing [http://localhost:8765/api/users/register](http://localhost:8765/api/users/register).
+6. Create a user by accessing [http://localhost:8765/api/users/register](http://localhost:8765/api/users/register) (with cUrl).
 
  #### cUrl
  
